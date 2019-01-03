@@ -24,7 +24,7 @@ class FooModel(
 
 class ValidatorTests {
     @Test fun basicSuccessValidation() {
-        val validator = Validator(FooModel()).apply { executeValidation() }
+        val validator = Validator.validate(FooModel())
 
         assertTrue(validator.isValidModel)
         assertTrue(validator.violations.isEmpty())

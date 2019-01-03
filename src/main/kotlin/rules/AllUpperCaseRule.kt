@@ -18,7 +18,7 @@ class AllUpperCaseRule(override val message: String) : IRule<String>, ErrorMessa
 
         override fun buildFromAnnotation(annotation: Annotation): IRule<String>? {
             return if (annotation is AllUpperCase) {
-                AllLowerCaseRule(annotation.message)
+                AllUpperCaseRule(annotation.message)
             } else null
         }
 

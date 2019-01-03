@@ -11,7 +11,8 @@ class AtLeastOneSpecialCharacterRule(override val message: String) : IRule<Strin
     annotation class AtLeastOneSpecialCharacter(val message: String = "At least one letter should be a special character.")
 
     override fun isValid(value: String?): Boolean {
-        return value?.toMatchRegex("[A-Za-z0-9]+") ?: false
+        // TODO regex fail
+        return value?.toMatchRegex("[!@#\$%^&*(),.?\":{}|<>]") ?: false
     }
 
     companion object Builder : IRuleBuilder<String> {
@@ -19,7 +20,7 @@ class AtLeastOneSpecialCharacterRule(override val message: String) : IRule<Strin
 
         override fun buildFromAnnotation(annotation: Annotation): IRule<String>? {
             return if (annotation is AtLeastOneSpecialCharacter) {
-                AllLowerCaseRule(annotation.message)
+                AtLeastOneSpecialCharacterRule(annotation.message)
             } else null
         }
 

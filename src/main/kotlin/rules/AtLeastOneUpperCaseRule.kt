@@ -19,7 +19,7 @@ class AtLeastOneUpperCaseRule(override val message: String) : IRule<String>, Err
 
         override fun buildFromAnnotation(annotation: Annotation): IRule<String>? {
             return if (annotation is AtLeastOneUpperCase) {
-                AllLowerCaseRule(annotation.message)
+                AtLeastOneUpperCaseRule(annotation.message)
             } else null
         }
 

@@ -8,19 +8,11 @@ import org.example.rules.EmailRule
 import org.example.rules.NotBlankRule
 import kotlin.reflect.full.*
 
-interface INotifier {
-    fun validationSuccess(propertyName: String, annotations: List<Annotation>)
-
-    fun validationFail(propertyName: String, violations: List<ValidationViolated>)
-
-    fun stopValidation():Boolean
-}
-
 class Validator <T : Any>(
         private val model: T,
         private val notifier: INotifier? = null
 ) {
-    private val constraintViolations = ConstraintViolations()
+    private val constraintViolations = RulesViolations()
 
     private val ruleBuilders: MutableList<IRuleBuilder<out Any>> = mutableListOf(
             NotBlankRule,

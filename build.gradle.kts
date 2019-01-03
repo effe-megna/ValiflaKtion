@@ -12,7 +12,7 @@ plugins {
 }
 
 group = "org.effe-megna"
-version = "0.0.2"
+version = "0.3.0"
 
 publishing {
     publications {
