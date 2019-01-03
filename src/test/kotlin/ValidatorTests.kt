@@ -7,22 +7,23 @@ import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
-class FooModel(
-        firstName: String = "francesco",
-        lastName: String = "megna",
-        email: String = "francesco.megna97@gmail.com"
-) {
-    @NotBlankRule.NotBlank
-    val firstname = firstName
-
-    @NotBlankRule.NotBlank
-    val lastname = lastName
-
-    @EmailRule.Email
-    val email = email
-}
-
 class ValidatorTests {
+
+    internal class FooModel(
+            firstName: String = "francesco",
+            lastName: String = "megna",
+            email: String = "francesco.megna97@gmail.com"
+    ) {
+        @NotBlankRule.NotBlank
+        val firstname = firstName
+
+        @NotBlankRule.NotBlank
+        val lastname = lastName
+
+        @EmailRule.Email
+        val email = email
+    }
+
     @Test fun basicSuccessValidation() {
         val validator = Validator.validate(FooModel())
 

@@ -7,13 +7,17 @@ import org.example.rules.*
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
+import rules.NoNumbersRule
 import kotlin.reflect.full.memberProperties
 
 class StringRulesTest {
-    internal class AllLowerCaseModel(foo: String) {
-        @AllLowerCaseRule.AllLowerCase
-        var foo = foo
-    }
+    internal class AllLowerCaseModel(@AllLowerCaseRule.AllLowerCase var foo: String)
+    internal class AllUpperCaseModel(@AllUpperCaseRule.AllUpperCase var foo: String)
+    internal class AtLeastOneLowerCaseModel(@AtLeastOneLowerCaseRule.AtLeastOneLowerCase var foo: String)
+    internal class AtLeastOneNumberCaseModel(@AtLeastOneNumberCaseRule.AtLeastOneNumberCase var foo: String)
+    internal class AtLeastOneSpecialCharacterModel(@AtLeastOneSpecialCharacterRule.AtLeastOneSpecialCharacter var foo: String)
+    internal class AtLeastOneUpperCaseModel(@AtLeastOneUpperCaseRule.AtLeastOneUpperCase var foo: String)
+    internal class NoNumberModel(@NoNumbersRule.NoNumbers var foo: String)
 
     @Test fun allLowerCase() {
         TestUtils<AllLowerCaseModel>(AllLowerCaseModel("lowercase"))
@@ -23,11 +27,6 @@ class StringRulesTest {
                     it.foo = "LOWERCASE"
                 }
                 .assertFalseOnRule()
-    }
-
-    internal class AllUpperCaseModel(foo: String) {
-        @AllUpperCaseRule.AllUpperCase
-        var foo = foo
     }
 
     @Test fun allUpperCase() {
@@ -42,11 +41,6 @@ class StringRulesTest {
             .assertFalseOnRule("foo")
     }
 
-    internal class AtLeastOneLowerCaseModel(foo: String) {
-        @AtLeastOneLowerCaseRule.AtLeastOneLowerCase
-        var foo = foo
-    }
-
     @Test fun atLeastOneLowerCase() {
         TestUtils<AtLeastOneLowerCaseModel>(AtLeastOneLowerCaseModel("kCLASS"))
                 .grabRule(AtLeastOneLowerCaseRule)
@@ -55,11 +49,6 @@ class StringRulesTest {
                     it.foo = "KCLASS"
                 }
                 .assertFalseOnRule()
-    }
-
-    internal class AtLeastOneNumberCaseModel(foo: String) {
-        @AtLeastOneNumberCaseRule.AtLeastOneNumberCase
-        var foo = foo
     }
 
     @Test fun atLeastOneNumberCase() {
@@ -72,11 +61,6 @@ class StringRulesTest {
                 .assertFalseOnRule()
     }
 
-    internal class AtLeastOneSpecialCharacterModel(foo: String) {
-        @AtLeastOneSpecialCharacterRule.AtLeastOneSpecialCharacter
-        var foo = foo
-    }
-
     @Test fun atLeastOneSpecialCharacter() {
         TestUtils<AtLeastOneSpecialCharacterModel>(AtLeastOneSpecialCharacterModel("password#"))
                 .grabRule(AtLeastOneSpecialCharacterRule)
@@ -87,17 +71,22 @@ class StringRulesTest {
                 .assertFalseOnRule()
     }
 
-    internal class AtLeastOneUpperCaseModel(foo: String) {
-        @AtLeastOneUpperCaseRule.AtLeastOneUpperCase
-        var foo = foo
-    }
-
     @Test fun atLeastOneUpperCase() {
         TestUtils<AtLeastOneUpperCaseModel>(AtLeastOneUpperCaseModel("Pass"))
                 .grabRule(AtLeastOneUpperCaseRule)
                 .assertTrueOnRule()
                 .modify {
                     it.foo = "fail"
+                }
+                .assertFalseOnRule()
+    }
+
+    @Test fun noNumbers() {
+        TestUtils<NoNumberModel>(NoNumberModel("pass"))
+                .grabRule(NoNumbersRule)
+                .assertTrueOnRule()
+                .modify {
+                    it.foo = "1_fail"
                 }
                 .assertFalseOnRule()
     }
