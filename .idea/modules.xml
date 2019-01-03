@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/my-model-validation.iml" filepath="$PROJECT_DIR$/my-model-validation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/my-model-validation_main.iml" filepath="$PROJECT_DIR$/.idea/modules/my-model-validation_main.iml" group="my-model-validation" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/my-model-validation_test.iml" filepath="$PROJECT_DIR$/.idea/modules/my-model-validation_test.iml" group="my-model-validation" />
+    </modules>
+  </component>
+</project>
