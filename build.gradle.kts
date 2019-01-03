@@ -34,6 +34,7 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib"))
     testImplementation("junit:junit:4.12")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.2.71")
 }
 
 buildScan {
