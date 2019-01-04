@@ -44,18 +44,17 @@ class Validator <T : Any>(
 
             val validationsViolated = PropertyValidator(
                     value,
-                    name,
                     buildersBasedOnKClass
             ).executeValidations(model::class.memberProperties.elementAt(index).annotations)
 
             if (validationsViolated.isNotEmpty())
-                constraintViolations[kProperty.name] = validationsViolated
+                constraintViolations[kProperty.name, value] = validationsViolated
 
             notifier?.run {
                 if (validationsViolated.isEmpty()) {
-                    validationSuccess(name, annotations)
+                    validationSuccess(name, value, annotations)
                 } else {
-                    validationFail(name, validationsViolated)
+                    validationFail(name, value, validationsViolated)
                 }
 
                 if (notifier.stopValidation()) return

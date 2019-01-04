@@ -1,6 +1,6 @@
 # My-Model-Validation
 
-A data model validation library, written in Kotlin, that use annotation processing.
+A model validation library, written in Kotlin, that use annotation processing.
 
 ## Installation
 
@@ -11,10 +11,10 @@ pip install foobar
 ```
 
 ## ⭐️ Features
-* Full respect of your types
 * built-in validation rules like blank, email, min lenght, no numbers, etc.
 * Multiple Validations and Checks
 * Create your own custom rules
+* Respect of your types
 
 
 ## 🐎 Quick Usage
@@ -132,7 +132,7 @@ Pass what you need for construct the rule through the annotation. [Type supporte
 2. #### Provide a Builder for the rule, usually situated into the Rule class.
 ```kotlin
  companion object Builder : IRuleBuilder<String> {
-      o verride val kType = getKType<String>() // return the type of rule using built-in fun getKType()
+      override val kType = getKType<String>() // return the type of rule using built-in fun getKType()
 
       override fun buildFromAnnotation(annotation: Annotation): IRule<String>? {
         return if (annotation is StartsWith) {

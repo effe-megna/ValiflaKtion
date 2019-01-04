@@ -6,7 +6,6 @@ import org.example.rules.NotBlankRule.NotBlank
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import rules.StartsWithRule
 
 class ValidatorTests {
 
@@ -20,19 +19,10 @@ class ValidatorTests {
 
         @NotBlank
         val lastname = lastName
-
-        @Email
-        val email = email
     }
 
     @Test fun basicSuccessValidation() {
         val validator = Validator.validate(FooModel())
-
-        val gg = Validator(FooModel())
-
-        gg.ruleBuilders.add(StartsWithRule.Builder)
-
-        gg.executeValidation()
 
         assertTrue(validator.isValidModel)
         assertTrue(validator.constraintViolations.violations.isEmpty())

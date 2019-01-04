@@ -4,8 +4,7 @@ import core.ErrorMessage
 import core.RulesViolations.RuleViolated
 
 class PropertyValidator <T : Any> (
-        private val property: T,
-        private val propertyName: String,
+        private val value: T,
         private val builders: List<IRuleBuilder<in T>>
 ) {
     fun executeValidations(annotations: List<Annotation>): MutableList<RuleViolated> {
@@ -15,12 +14,10 @@ class PropertyValidator <T : Any> (
             builders.forEach {
                 val rule = it.buildFromAnnotation(annotation) ?: return@forEach
 
-                if (rule.isValid(property).not()) {
+                if (rule.isValid(value).not()) {
                     val violation = RuleViolated(rule as IRule<*>, annotation)
 
-                    if (rule is ErrorMessage) {
-                        violation.message = rule.message
-                    }
+                    if (rule is ErrorMessage) violation.message = rule.message
 
                     violations += violation
                 }
