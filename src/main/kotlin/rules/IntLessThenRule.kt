@@ -5,9 +5,9 @@ import org.example.core.IRule
 import org.example.core.IRuleBuilder
 import org.example.utils.getKType
 
-class IntegerLessThenRule(val target: Int, override val message: String) : IRule<Int>, ErrorMessage {
+class IntLessThenRule(val target: Int, override val message: String) : IRule<Int>, ErrorMessage {
     @Target(AnnotationTarget.PROPERTY)
-    annotation class IntegerLessThen(val target: Int, val message: String = "The value should be less then the target.")
+    annotation class IntLessThen(val target: Int, val message: String = "The value should be less then the target.")
 
     //TODO find a way to use target value into default message
 
@@ -21,8 +21,8 @@ class IntegerLessThenRule(val target: Int, override val message: String) : IRule
         override val kType = getKType<Int>()
 
         override fun buildFromAnnotation(annotation: Annotation): IRule<Int>? {
-            return if (annotation is IntegerLessThen) {
-                IntegerLessThenRule(annotation.target, annotation.message)
+            return if (annotation is IntLessThen) {
+                IntLessThenRule(annotation.target, annotation.message)
             } else null
         }
     }

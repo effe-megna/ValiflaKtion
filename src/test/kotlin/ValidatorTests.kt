@@ -1,11 +1,12 @@
 package org.example
 
 import core.Validator
-import org.example.rules.EmailRule
-import org.example.rules.NotBlankRule
+import org.example.rules.EmailRule.Email
+import org.example.rules.NotBlankRule.NotBlank
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
+import rules.StartsWithRule
 
 class ValidatorTests {
 
@@ -14,21 +15,27 @@ class ValidatorTests {
             lastName: String = "megna",
             email: String = "francesco.megna97@gmail.com"
     ) {
-        @NotBlankRule.NotBlank
+        @NotBlank
         val firstname = firstName
 
-        @NotBlankRule.NotBlank
+        @NotBlank
         val lastname = lastName
 
-        @EmailRule.Email
+        @Email
         val email = email
     }
 
     @Test fun basicSuccessValidation() {
         val validator = Validator.validate(FooModel())
 
+        val gg = Validator(FooModel())
+
+        gg.ruleBuilders.add(StartsWithRule.Builder)
+
+        gg.executeValidation()
+
         assertTrue(validator.isValidModel)
-        assertTrue(validator.violations.isEmpty())
+        assertTrue(validator.constraintViolations.violations.isEmpty())
     }
 
     @Test fun basicFailedValidation() {
@@ -39,6 +46,6 @@ class ValidatorTests {
         )).apply { executeValidation() }
 
         assertFalse(validator.isValidModel)
-        assertFalse(validator.violations.isEmpty())
+        assertFalse(validator.constraintViolations.violations.isEmpty())
     }
 }

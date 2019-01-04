@@ -12,16 +12,16 @@ class Validator <T : Any>(
         private val model: T,
         private val notifier: INotifier? = null
 ) {
-    private val constraintViolations = RulesViolations()
+    val constraintViolations = RulesViolations()
 
-    private val ruleBuilders: MutableList<IRuleBuilder<out Any>> = mutableListOf(
+    val ruleBuilders: MutableList<IRuleBuilder<out Any>> = mutableListOf(
             NotBlankRule,
             EmailRule,
             AtLeastOneNumberCaseRule,
             AtLeastOneLowerCaseRule
     )
 
-    val violations = constraintViolations.violations
+    private val violations = constraintViolations.violations
 
     var isValidModel: Boolean = false
         get() = violations.isEmpty()
