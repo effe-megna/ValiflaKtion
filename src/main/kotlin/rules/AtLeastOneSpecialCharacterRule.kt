@@ -1,6 +1,7 @@
 package org.example.rules
 
 import core.ErrorMessage
+import extensions.containAtLeastOneSpecialCharacter
 import org.example.core.IRule
 import org.example.core.IRuleBuilder
 import org.example.utils.getKType
@@ -12,7 +13,7 @@ class AtLeastOneSpecialCharacterRule(override val message: String) : IRule<Strin
 
     override fun isValid(value: String?): Boolean {
         // TODO regex fail
-        return value?.toMatchRegex("[!@#\$%^&*(),.?\":{}|<>]") ?: false
+        return value?.containAtLeastOneSpecialCharacter() ?: false
     }
 
     companion object Builder : IRuleBuilder<String> {

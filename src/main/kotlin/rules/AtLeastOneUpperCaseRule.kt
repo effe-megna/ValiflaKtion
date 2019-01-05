@@ -1,6 +1,7 @@
 package org.example.rules
 
 import core.ErrorMessage
+import extensions.containsAtLeastOneUpperCase
 import org.example.core.IRule
 import org.example.core.IRuleBuilder
 import org.example.utils.getKType
@@ -11,7 +12,7 @@ class AtLeastOneUpperCaseRule(override val message: String) : IRule<String>, Err
     annotation class AtLeastOneUpperCase(val message: String = "At least one letter should be in upper case.")
 
     override fun isValid(value: String?): Boolean {
-        return value?.toMatchRegex("^(?=.*[A-Z]).+\$") ?: false
+        return value?.containsAtLeastOneUpperCase() ?: false
     }
 
     companion object Builder : IRuleBuilder<String> {

@@ -1,6 +1,7 @@
 package org.example.rules
 
 import core.ErrorMessage
+import extensions.containAtLeastOneLowerCase
 import org.example.core.IRule
 import org.example.core.IRuleBuilder
 import org.example.utils.getKType
@@ -11,7 +12,7 @@ class AtLeastOneLowerCaseRule(override val message: String) : IRule<String>, Err
     annotation class AtLeastOneLowerCase(val message: String = "At least one letter should be in lower case.")
 
     override fun isValid(value: String?): Boolean {
-        return value?.toMatchRegex("^(?=.*[a-z]).+\$") ?: false
+        return value?.containAtLeastOneLowerCase() ?: false
     }
 
     companion object Builder : IRuleBuilder<String> {

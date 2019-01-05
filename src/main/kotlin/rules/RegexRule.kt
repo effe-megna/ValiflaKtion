@@ -22,6 +22,5 @@ class RegexRule(val pattern: String, override val message: String) : IRule<Strin
                 RegexRule(annotation.pattern, annotation.message)
             } else null
         }
-
     }
 }

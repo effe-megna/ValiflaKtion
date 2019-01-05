@@ -1,6 +1,7 @@
 package rules
 
 import core.ErrorMessage
+import extensions.containAnyNumber
 import org.example.core.IRule
 import org.example.core.IRuleBuilder
 import org.example.utils.getKType
@@ -12,7 +13,7 @@ class NoNumbersRule(override val message: String) : IRule<String>, ErrorMessage 
 
     override fun isValid(value: String?): Boolean {
         // TODO regex problem
-        return value?.matches(Regex(".*\\d+.*\"")) ?: false
+        return value?.containAnyNumber() ?: false
     }
 
     companion object Builder : IRuleBuilder<String> {
