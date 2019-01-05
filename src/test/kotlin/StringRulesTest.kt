@@ -21,74 +21,74 @@ class StringRulesTest {
 
     @Test fun allLowerCase() {
         TestUtils<AllLowerCaseModel>(AllLowerCaseModel("lowercase"))
-                .grabRule(AllLowerCaseRule.Builder)
-                .assertTrueOnRule("foo")
+                .constructoRuleFromBuilderAndProperty(AllLowerCaseRule.Builder)
+                .ruleIsValidOnProperty("foo")
                 .modify {
                     it.foo = "LOWERCASE"
                 }
-                .assertFalseOnRule()
+                .ruleIsUnvalidonProperty()
     }
 
     @Test fun allUpperCase() {
         val fooModel = AllUpperCaseModel("UPPERCASE")
 
         TestUtils<AllUpperCaseModel>(fooModel)
-            .grabRule(AllUpperCaseRule.Builder)
-            .assertTrueOnRule("foo")
+            .constructoRuleFromBuilderAndProperty(AllUpperCaseRule.Builder)
+            .ruleIsValidOnProperty("foo")
             .modify {
                 it.foo = "uppercase"
             }
-            .assertFalseOnRule("foo")
+            .ruleIsUnvalidonProperty("foo")
     }
 
     @Test fun atLeastOneLowerCase() {
         TestUtils<AtLeastOneLowerCaseModel>(AtLeastOneLowerCaseModel("kCLASS"))
-                .grabRule(AtLeastOneLowerCaseRule)
-                .assertTrueOnRule()
+                .constructoRuleFromBuilderAndProperty(AtLeastOneLowerCaseRule)
+                .ruleIsValidOnProperty()
                 .modify {
                     it.foo = "KCLASS"
                 }
-                .assertFalseOnRule()
+                .ruleIsUnvalidonProperty()
     }
 
     @Test fun atLeastOneNumberCase() {
         TestUtils<AtLeastOneNumberCaseModel>(AtLeastOneNumberCaseModel("asd1"))
-                .grabRule(AtLeastOneNumberCaseRule)
-                .assertTrueOnRule()
+                .constructoRuleFromBuilderAndProperty(AtLeastOneNumberCaseRule)
+                .ruleIsValidOnProperty()
                 .modify {
                     it.foo = "asd"
                 }
-                .assertFalseOnRule()
+                .ruleIsUnvalidonProperty()
     }
 
     @Test fun atLeastOneSpecialCharacter() {
         TestUtils<AtLeastOneSpecialCharacterModel>(AtLeastOneSpecialCharacterModel("password#"))
-                .grabRule(AtLeastOneSpecialCharacterRule)
-                .assertTrueOnRule()
+                .constructoRuleFromBuilderAndProperty(AtLeastOneSpecialCharacterRule)
+                .ruleIsValidOnProperty()
                 .modify {
                     it.foo = "password"
                 }
-                .assertFalseOnRule()
+                .ruleIsUnvalidonProperty()
     }
 
     @Test fun atLeastOneUpperCase() {
         TestUtils<AtLeastOneUpperCaseModel>(AtLeastOneUpperCaseModel("Pass"))
-                .grabRule(AtLeastOneUpperCaseRule)
-                .assertTrueOnRule()
+                .constructoRuleFromBuilderAndProperty(AtLeastOneUpperCaseRule)
+                .ruleIsValidOnProperty()
                 .modify {
                     it.foo = "fail"
                 }
-                .assertFalseOnRule()
+                .ruleIsUnvalidonProperty()
     }
 
     @Test fun noNumbers() {
         TestUtils<NoNumberModel>(NoNumberModel("pass"))
-                .grabRule(NoNumbersRule)
-                .assertTrueOnRule()
+                .constructoRuleFromBuilderAndProperty(NoNumbersRule)
+                .ruleIsValidOnProperty()
                 .modify {
                     it.foo = "1_fail"
                 }
-                .assertFalseOnRule()
+                .ruleIsUnvalidonProperty()
     }
 
 
@@ -96,7 +96,7 @@ class StringRulesTest {
 
         var rule: IRule<*>? = null
 
-        fun grabRule(
+        fun constructoRuleFromBuilderAndProperty(
                 ruleBuilder: IRuleBuilder<*>,
                 propertyName: String = "foo"
         ): TestUtils<T> {
@@ -114,13 +114,13 @@ class StringRulesTest {
             return this
         }
 
-        fun assertTrueOnRule(propertyName: String = "foo"): TestUtils<T> {
+        fun ruleIsValidOnProperty(propertyName: String = "foo"): TestUtils<T> {
             assertTrue(rule!!.isValid(Validator.readProperty(model, propertyName)))
 
             return this
         }
 
-        fun assertFalseOnRule(propertyName: String = "foo"): TestUtils<T> {
+        fun ruleIsUnvalidonProperty(propertyName: String = "foo"): TestUtils<T> {
             assertFalse(rule!!.isValid(Validator.readProperty(model, propertyName)))
 
             return this

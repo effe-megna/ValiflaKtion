@@ -8,6 +8,17 @@ import org.example.rules.EmailRule
 import org.example.rules.NotBlankRule
 import kotlin.reflect.full.*
 
+/**
+ * This class is responsible to validate your model and exhibits callback through the validation process
+ *
+ * @param T the type of your model
+ * @property model the model you want to validate
+ * @property notifier a class or object implements INotifier, useful for callback through the validation process
+ * @property constraintViolations object that exhibits info about the failed rules
+ * @property ruleBuilders mutableList of RuleBuilder, required for build rule from annotation
+ * @property isValidModel boolean represents the result of validation
+ *
+ */
 class Validator <T : Any>(
         private val model: T,
         private val notifier: INotifier? = null
@@ -21,10 +32,8 @@ class Validator <T : Any>(
             AtLeastOneLowerCaseRule
     )
 
-    private val violations = constraintViolations.violations
-
     var isValidModel: Boolean = false
-        get() = violations.isEmpty()
+        get() = constraintViolations.violations.isEmpty()
         private set
 
     fun executeValidation() {

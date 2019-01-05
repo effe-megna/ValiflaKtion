@@ -6,9 +6,9 @@ fun String.containOnlyLowerCase(): Boolean = this.all { it.isLowerCase() }
 
 fun String.containOnlyUpperCase(): Boolean = this.all { it.isUpperCase() }
 
-fun String.containAtLeastOneLowerCase(): Boolean = this.any { it.isLowerCase() }.not()
+fun String.containAtLeastOneLowerCase(): Boolean = this.any { it.isLowerCase() }
 
-fun String.containsAtLeastOneUpperCase(): Boolean = this.any { it.isUpperCase() }.not()
+fun String.containsAtLeastOneUpperCase(): Boolean = this.any { it.isUpperCase() }
 
 fun String.containAtLeastOneNumberCase(): Boolean = this.toMatchRegex(".*\\d.*")
 
