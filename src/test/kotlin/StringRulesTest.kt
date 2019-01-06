@@ -22,7 +22,7 @@ class StringRulesTest {
     @Test fun allLowerCase() {
         TestUtils<AllLowerCaseModel>(AllLowerCaseModel("lowercase"))
                 .constructoRuleFromBuilderAndProperty(AllLowerCaseRule.Builder)
-                .ruleIsValidOnProperty("foo")
+                .ruleIsValidOnProperty("value")
                 .modify {
                     it.foo = "LOWERCASE"
                 }
@@ -34,11 +34,11 @@ class StringRulesTest {
 
         TestUtils<AllUpperCaseModel>(fooModel)
             .constructoRuleFromBuilderAndProperty(AllUpperCaseRule.Builder)
-            .ruleIsValidOnProperty("foo")
+            .ruleIsValidOnProperty("value")
             .modify {
                 it.foo = "uppercase"
             }
-            .ruleIsUnvalidonProperty("foo")
+            .ruleIsUnvalidonProperty("value")
     }
 
     @Test fun atLeastOneLowerCase() {
@@ -98,7 +98,7 @@ class StringRulesTest {
 
         fun constructoRuleFromBuilderAndProperty(
                 ruleBuilder: IRuleBuilder<*>,
-                propertyName: String = "foo"
+                propertyName: String = "value"
         ): TestUtils<T> {
             val annotation = model::class.memberProperties.find { it.name == propertyName }!!.annotations.first()
 
@@ -114,13 +114,13 @@ class StringRulesTest {
             return this
         }
 
-        fun ruleIsValidOnProperty(propertyName: String = "foo"): TestUtils<T> {
+        fun ruleIsValidOnProperty(propertyName: String = "value"): TestUtils<T> {
             assertTrue(rule!!.isValid(Validator.readProperty(model, propertyName)))
 
             return this
         }
 
-        fun ruleIsUnvalidonProperty(propertyName: String = "foo"): TestUtils<T> {
+        fun ruleIsUnvalidonProperty(propertyName: String = "value"): TestUtils<T> {
             assertFalse(rule!!.isValid(Validator.readProperty(model, propertyName)))
 
             return this

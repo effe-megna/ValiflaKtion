@@ -5,7 +5,6 @@ import extensions.isEmail
 import org.example.core.IRule
 import org.example.core.IRuleBuilder
 import org.example.utils.getKType
-import org.example.utils.toMatchRegex
 
 class EmailRule(override val message: String) : IRule<String>, ErrorMessage {
     @Target(AnnotationTarget.PROPERTY)

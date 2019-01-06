@@ -46,14 +46,15 @@ class Validator <T : Any>(
 
             val value = readProperty<Any>(model, name)
 
-            @Suppress("UNCHECKED_CAST")
-            val buildersBasedOnKClass = ruleBuilders.filter {
-                kProperty.returnType.isSubtypeOf(it.kType)
-            } as List<IRuleBuilder<in Any>>
+            // Get builders based on property type, broken when use Selector
+            // @Suppress("UNCHECKED_CAST")
+            // val buildersBasedOnKClass = ruleBuilders.filter {
+            //    kProperty.returnType.isSubtypeOf(it.kType)
+            // } as List<IRuleBuilder<in Any>>
 
             val validationsViolated = PropertyValidator(
                     value,
-                    buildersBasedOnKClass
+                    ruleBuilders as List<IRuleBuilder<in Any>>
             ).executeValidations(model::class.memberProperties.elementAt(index).annotations)
 
             if (validationsViolated.isNotEmpty())

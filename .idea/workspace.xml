@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4054867-e241-4a92-9b62-27a859d40e00" name="Default Changelist" comment="">
+    <list default="true" id="e4054867-e241-4a92-9b62-27a859d40e00" name="Default Changelist" comment="Some refactoring and documentation on Validator">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/core/Validator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/core/Validator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/extensions/String.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/extensions/String.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rules/EmailRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rules/EmailRule.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/StringRulesTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/StringRulesTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -25,7 +30,8 @@
     <session id="-715337352">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="1" />
@@ -34,38 +40,38 @@
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="5" />
-          <entry key="kt" value="192" />
-          <entry key="kts" value="6" />
+          <entry key="kt" value="205" />
+          <entry key="kts" value="7" />
           <entry key="md" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="5" />
-          <entry key="Kotlin" value="198" />
+          <entry key="Kotlin" value="212" />
           <entry key="Markdown" value="4" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="kt" value="11368" />
-          <entry key="kts" value="75" />
+          <entry key="kt" value="13391" />
+          <entry key="kts" value="87" />
           <entry key="md" value="17" />
-          <entry key="txt" value="525" />
+          <entry key="txt" value="578" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Kotlin" value="11443" />
+          <entry key="Kotlin" value="13478" />
           <entry key="Markdown" value="15" />
-          <entry key="PLAIN_TEXT" value="527" />
+          <entry key="PLAIN_TEXT" value="580" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -76,21 +82,42 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/Validator.kt">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="18" column="69" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
+            <state relative-caret-position="34">
+              <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+              <folding>
+                <element signature="e#26#269#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/extensions/String.kt">
+        <entry file="file://$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+            <state relative-caret-position="393">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/Validator.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="56" column="60" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/IRule.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -355,7 +382,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6185982423153" />
+        <entry key="$PROJECT_DIR$" value="6186181483808" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle.kts" value="3137182723" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="261915471" />
@@ -523,7 +550,6 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/AtLeastContainOneElementRule.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/ElementsNotEmptyRule.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/MinLenghtRule.kt" />
-        <option value="$PROJECT_DIR$/build.gradle.kts" />
         <option value="$PROJECT_DIR$/src/main/kotlin/core/ErrorMessage.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/core/Violations.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/NumberBetweenRule.kt" />
@@ -537,28 +563,34 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/core/RulesViolations.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/core/INotifier.kt" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/RegexRule.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/AllLowerCaseRule.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/AllUpperCaseRule.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/AtLeastOneLowerCaseRule.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/AtLeastOneNumberCaseRule.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/AtLeastOneSpecialCharacterRule.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/AtLeastOneUpperCaseRule.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/rules/EmailRule.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/NoNumbersRule.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/extensions/String.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/StringRulesTest.kt" />
+        <option value="$PROJECT_DIR$/build.gradle.kts" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/rules/EmailRule.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/core/Validator.kt" />
       </list>
     </option>
   </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="Rerun Failed Tests" />
+    </enabled-run-configurations>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1098" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
+    <option name="height" value="1099" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -568,6 +600,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -606,22 +640,6 @@
               <item name="my-model-validation" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-model-validation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="extensions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-model-validation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-model-validation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="rules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-model-validation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-model-validation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -635,12 +653,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546708433458" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546813222438" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -655,7 +671,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StringRulesTest">
+  <component name="RunManager" selected="JUnit.ValidatorTests.basicSuccessValidation">
     <configuration name="StringRulesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="my-model-validation_test" />
       <extension name="coverage">
@@ -670,38 +686,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringRulesTest.atLeastOneLowerCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="my-model-validation_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="org.example.StringRulesTest" />
-      <option name="METHOD_NAME" value="atLeastOneLowerCase" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringRulesTest.noNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="my-model-validation_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="org.example.StringRulesTest" />
-      <option name="METHOD_NAME" value="noNumbers" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ValidatorTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="my-model-validation_test" />
       <extension name="coverage">
@@ -712,6 +696,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="org.example.ValidatorTests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidatorTests.basicFailedValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-model-validation_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ValidatorTests" />
+      <option name="METHOD_NAME" value="basicFailedValidation" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -732,20 +732,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ValidatorTests.fancyRule" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-model-validation_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ValidatorTests" />
+      <option name="METHOD_NAME" value="fancyRule" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.StringRulesTest" />
-      <item itemvalue="JUnit.StringRulesTest.noNumbers" />
-      <item itemvalue="JUnit.ValidatorTests.basicSuccessValidation" />
       <item itemvalue="JUnit.ValidatorTests" />
-      <item itemvalue="JUnit.StringRulesTest.atLeastOneLowerCase" />
+      <item itemvalue="JUnit.ValidatorTests.fancyRule" />
+      <item itemvalue="JUnit.ValidatorTests.basicFailedValidation" />
+      <item itemvalue="JUnit.ValidatorTests.basicSuccessValidation" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StringRulesTest" />
-        <item itemvalue="JUnit.StringRulesTest.atLeastOneLowerCase" />
-        <item itemvalue="JUnit.ValidatorTests" />
         <item itemvalue="JUnit.ValidatorTests.basicSuccessValidation" />
-        <item itemvalue="JUnit.StringRulesTest.noNumbers" />
+        <item itemvalue="JUnit.ValidatorTests" />
+        <item itemvalue="JUnit.ValidatorTests.fancyRule" />
+        <item itemvalue="JUnit.ValidatorTests.basicFailedValidation" />
+        <item itemvalue="JUnit.StringRulesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -809,39 +825,46 @@
       <option name="project" value="LOCAL" />
       <updated>1546706464976</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Some refactoring and documentation on Validator">
+      <created>1546708516161</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1546708516161</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ValidatorTests_basicSuccessValidation - 2019.01.03 at 21h 59m 07s.xml">
-      <configuration name="ValidatorTests.basicSuccessValidation" configurationId="JUnit" />
+    <history-entry file="ValidatorTests_fancyRule - 2019.01.06 at 22h 57m 33s.xml">
+      <configuration name="ValidatorTests.fancyRule" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ValidatorTests_basicSuccessValidation - 2019.01.04 at 15h 09m 13s.xml">
-      <configuration name="ValidatorTests.basicSuccessValidation" configurationId="JUnit" />
+    <history-entry file="ValidatorTests_basicFailedValidation - 2019.01.06 at 23h 08m 58s.xml">
+      <configuration name="ValidatorTests.basicFailedValidation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ValidatorTests_basicSuccessValidation - 2019.01.04 at 15h 15m 42s.xml">
-      <configuration name="ValidatorTests.basicSuccessValidation" configurationId="JUnit" />
+    <history-entry file="ValidatorTests_fancyRule - 2019.01.06 at 23h 10m 33s.xml">
+      <configuration name="ValidatorTests.fancyRule" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ValidatorTests_basicSuccessValidation - 2019.01.04 at 15h 16m 42s.xml">
-      <configuration name="ValidatorTests.basicSuccessValidation" configurationId="JUnit" />
+    <history-entry file="ValidatorTests_basicFailedValidation - 2019.01.06 at 23h 11m 49s.xml">
+      <configuration name="ValidatorTests.basicFailedValidation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ValidatorTests - 2019.01.04 at 15h 20m 18s.xml">
-      <configuration name="ValidatorTests" configurationId="JUnit" />
+    <history-entry file="ValidatorTests_fancyRule - 2019.01.06 at 23h 12m 01s.xml">
+      <configuration name="ValidatorTests.fancyRule" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ValidatorTests - 2019.01.04 at 15h 20m 44s.xml">
-      <configuration name="ValidatorTests" configurationId="JUnit" />
+    <history-entry file="ValidatorTests_fancyRule - 2019.01.06 at 23h 13m 14s.xml">
+      <configuration name="ValidatorTests.fancyRule" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringRulesTest - 2019.01.04 at 15h 20m 59s.xml">
-      <configuration name="StringRulesTest" configurationId="JUnit" />
+    <history-entry file="ValidatorTests_fancyRule - 2019.01.06 at 23h 13m 39s.xml">
+      <configuration name="ValidatorTests.fancyRule" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringRulesTest - 2019.01.05 at 17h 44m 00s.xml">
-      <configuration name="StringRulesTest" configurationId="JUnit" />
+    <history-entry file="ValidatorTests_fancyRule - 2019.01.06 at 23h 14m 03s.xml">
+      <configuration name="ValidatorTests.fancyRule" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringRulesTest_atLeastOneLowerCase - 2019.01.05 at 17h 46m 09s.xml">
-      <configuration name="StringRulesTest.atLeastOneLowerCase" configurationId="JUnit" />
+    <history-entry file="ValidatorTests_fancyRule - 2019.01.06 at 23h 14m 39s.xml">
+      <configuration name="ValidatorTests.fancyRule" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringRulesTest - 2019.01.05 at 17h 46m 54s.xml">
-      <configuration name="StringRulesTest" configurationId="JUnit" />
+    <history-entry file="ValidatorTests_fancyRule - 2019.01.06 at 23h 15m 05s.xml">
+      <configuration name="ValidatorTests.fancyRule" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -854,10 +877,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="0" />
+    <frame x="-8" y="-8" width="1551" height="879" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28993288" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29376256" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -866,9 +889,9 @@
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32348993" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3181208" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3230563" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.31769437" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32931727" />
@@ -876,7 +899,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.23624161" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32931727" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32885906" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32841823" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -930,9 +953,44 @@
     <MESSAGE value="Implement some rules on Int type and String. Added a cool README" />
     <MESSAGE value="Improvements on validation info with propertyValue passed into constraint violations and INotifier callback" />
     <MESSAGE value="Implements String extensions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implements String extensions" />
+    <MESSAGE value="Some refactoring and documentation on Validator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some refactoring and documentation on Validator" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="validator.constraintViolations" language="kotlin" />
@@ -1001,6 +1059,21 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>annotations.any { it is Selector }</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>annotations.contains(Selector::selector)</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>selector.expose(value)</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>&quot;SASD&quot;.any { it.isLowerCase() }</expression-string>
         <language-id>kotlin</language-id>
         <custom-info>import kotlin.reflect.full.companionObjectInstance</custom-info>
@@ -1035,16 +1108,6 @@
       </expression>
       <expression>
         <expression-string>ruleClazz.companionObjectInstance!!::class.declaredFunctions.find { it.name == ruleBuilderName }!!.call()</expression-string>
-        <language-id>kotlin</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>ruleClazz.companionObjectInstance!!::class.declaredFunctions.find { it.name == ruleBuilderName }!!</expression-string>
-        <language-id>kotlin</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>ruleClazz.companionObjectInstance!!::class                     .declaredFunctions.find { it.name == ruleBuilderName }!!                     .call(annotation) as IRule&lt;*&gt;</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -1101,16 +1164,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#21#182#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1123,13 +1176,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle.kts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
@@ -1161,13 +1207,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/IRuleBuilder.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/RulesViolations.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
@@ -1196,16 +1235,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-          <folding>
-            <element signature="e#26#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/rules/AllLowerCaseRule.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1224,13 +1253,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/rules/EmailRule.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1290,20 +1312,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/StringRulesTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="98" column="48" selection-start-line="98" selection-start-column="48" selection-end-line="98" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/IRule.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.71/ff62b6a76e3200cac3d7df0859d7665fe6d54955/kotlin-stdlib-common-1.2.71-sources.jar!/generated/_Strings.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -1318,10 +1326,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle.kts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/StringRulesTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="98" column="48" selection-start-line="98" selection-start-column="48" selection-end-line="98" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/IRuleBuilder.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/rules/EmailRule.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding>
+            <element signature="e#27#178#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/IRule.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.71/837bf519e19ab718239e01223104869a40eab8b6/kotlin-reflect-1.2.71-sources.jar!/kotlin/reflect/full/KAnnotatedElements.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+          <folding>
+            <element signature="e#26#269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/Validator.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="18" column="69" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
+        <state relative-caret-position="272">
+          <caret line="56" column="60" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
         </state>
       </provider>
     </entry>
