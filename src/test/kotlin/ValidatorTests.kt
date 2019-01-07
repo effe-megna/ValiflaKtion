@@ -1,10 +1,14 @@
 package org.example
 
+import core.INotifier
+import core.RulesViolations
 import core.Validator
 import org.example.core.ISelector
 import org.example.core.Selector
 import org.example.rules.AllLowerCaseRule
 import org.example.rules.AllUpperCaseRule
+import org.example.rules.AllUpperCaseRule.AllUpperCase
+import org.example.rules.EmailRule
 import org.example.rules.NotBlankRule.NotBlank
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
@@ -22,6 +26,9 @@ class ValidatorTests {
 
         @NotBlank
         val lastname = lastName
+
+        @EmailRule.Email
+        val email = email
     }
 
     @Test fun basicSuccessValidation() {
@@ -46,12 +53,12 @@ class ValidatorTests {
 
     class Model(
             @Selector(FieldSelector::class)
-            @AllUpperCaseRule.AllUpperCase
+            @AllUpperCase
             val field: Field
     )
 
     class FieldSelector : ISelector<Field, String> {
-        override fun expose(value: Field): String {
+        override fun extractValueToValidate(value: Field): String {
             return value.value
         }
     }

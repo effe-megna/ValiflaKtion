@@ -73,7 +73,7 @@ class Validator <T : Any>(
             ).executeValidations(model::class.memberProperties.elementAt(index).annotations)
 
             if (validationsViolated.isNotEmpty())
-                constraintViolations[kProperty.name, value] = validationsViolated
+                constraintViolations[name, value] = validationsViolated
 
             notifier?.run {
                 if (validationsViolated.isEmpty()) {

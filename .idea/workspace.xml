@@ -1,72 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4054867-e241-4a92-9b62-27a859d40e00" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/my-model-validation_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/my-model-validation_test.iml" afterDir="false" />
+    <list default="true" id="e4054867-e241-4a92-9b62-27a859d40e00" name="Default Changelist" comment="Selector annotation fix and add all rules into rulesBuilders field of Validator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/META-INF/my-model-validation.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/META-INF/my-model-validation.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/build-history.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/repository/org/effe-megna/my-model-validation/maven-metadata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/repository/org/effe-megna/my-model-validation/maven-metadata.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/repository/org/effe-megna/my-model-validation/maven-metadata.xml.md5" beforeDir="false" afterPath="$PROJECT_DIR$/build/repository/org/effe-megna/my-model-validation/maven-metadata.xml.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/repository/org/effe-megna/my-model-validation/maven-metadata.xml.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/repository/org/effe-megna/my-model-validation/maven-metadata.xml.sha1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/publishDefaultPublicationToMavenRepository/org/effe-megna/my-model-validation/maven-metadata-remote.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/publishDefaultPublicationToMavenRepository/org/effe-megna/my-model-validation/maven-metadata-remote.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/publishDefaultPublicationToMavenRepository/org/effe-megna/my-model-validation/resolver-status.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/publishDefaultPublicationToMavenRepository/org/effe-megna/my-model-validation/resolver-status.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/core/ISelector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/core/ISelector.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/core/Validator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/core/Validator.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt" afterDir="false" />
     </list>
@@ -88,48 +27,49 @@
     <session id="-715337352">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="5" />
-          <entry key="kt" value="213" />
+          <entry key="kt" value="220" />
           <entry key="kts" value="8" />
-          <entry key="md" value="7" />
+          <entry key="md" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="5" />
-          <entry key="Kotlin" value="221" />
-          <entry key="Markdown" value="4" />
+          <entry key="Kotlin" value="228" />
+          <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="kt" value="14001" />
+          <entry key="kt" value="14404" />
           <entry key="kts" value="87" />
-          <entry key="md" value="17" />
-          <entry key="txt" value="637" />
+          <entry key="md" value="1437" />
+          <entry key="txt" value="718" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Kotlin" value="14088" />
-          <entry key="Markdown" value="15" />
-          <entry key="PLAIN_TEXT" value="639" />
+          <entry key="Kotlin" value="14504" />
+          <entry key="Markdown" value="1422" />
+          <entry key="PLAIN_TEXT" value="720" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -140,7 +80,20 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="44">
+                <caret line="176" column="9" lean-forward="true" selection-start-line="176" selection-start-column="9" selection-end-line="176" selection-end-column="9" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -580,7 +533,6 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/StartsWithRule.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/core/RulesViolations.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/core/INotifier.kt" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/RegexRule.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/AllLowerCaseRule.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/AllUpperCaseRule.kt" />
@@ -594,17 +546,18 @@
         <option value="$PROJECT_DIR$/build.gradle.kts" />
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/EmailRule.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt" />
-        <option value="$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/core/Validator.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/core/ISelector.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/core/Validator.kt" />
+        <option value="$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1100" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1098" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -614,6 +567,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -638,33 +592,6 @@
               <item name="build" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-model-validation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-model-validation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="effe-megna" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-model-validation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-model-validation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="effe-megna" type="462c0819:PsiDirectoryNode" />
-              <item name="my-model-validation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-model-validation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-model-validation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="effe-megna" type="462c0819:PsiDirectoryNode" />
-              <item name="my-model-validation" type="462c0819:PsiDirectoryNode" />
-              <item name="0.3.0" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-model-validation" type="b2602c69:ProjectViewProjectNode" />
@@ -718,12 +645,11 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546821914093" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546826219753" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -738,7 +664,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ValidatorTests.validationUsingSelector">
+  <component name="RunManager" selected="JUnit.ValidatorTests">
     <configuration name="ValidatorTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="my-model-validation_test" />
       <extension name="coverage">
@@ -826,9 +752,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ValidatorTests.validationUsingSelector" />
-        <item itemvalue="JUnit.ValidatorTests.basicSuccessValidation" />
         <item itemvalue="JUnit.ValidatorTests" />
+        <item itemvalue="JUnit.ValidatorTests.basicSuccessValidation" />
+        <item itemvalue="JUnit.ValidatorTests.validationUsingSelector" />
         <item itemvalue="JUnit.ValidatorTests.fancyRule" />
         <item itemvalue="JUnit.ValidatorTests.basicFailedValidation" />
       </list>
@@ -908,39 +834,46 @@
       <option name="project" value="LOCAL" />
       <updated>1546813265895</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Selector annotation fix and add all rules into rulesBuilders field of Validator">
+      <created>1546822388650</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1546822388650</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ValidatorTests_fancyRule - 2019.01.06 at 23h 15m 05s.xml">
-      <configuration name="ValidatorTests.fancyRule" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ValidatorTests_fancyRule - 2019.01.06 at 23h 17m 38s.xml">
-      <configuration name="ValidatorTests.fancyRule" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ValidatorTests_fancyRule - 2019.01.06 at 23h 17m 59s.xml">
-      <configuration name="ValidatorTests.fancyRule" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ValidatorTests - 2019.01.06 at 23h 19m 05s.xml">
-      <configuration name="ValidatorTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ValidatorTests_basicSuccessValidation - 2019.01.06 at 23h 20m 15s.xml">
-      <configuration name="ValidatorTests.basicSuccessValidation" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ValidatorTests_basicSuccessValidation - 2019.01.06 at 23h 20m 34s.xml">
-      <configuration name="ValidatorTests.basicSuccessValidation" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ValidatorTests_validationUsingSelector - 2019.01.07 at 01h 33m 26s.xml">
-      <configuration name="ValidatorTests.validationUsingSelector" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ValidatorTests_validationUsingSelector - 2019.01.07 at 01h 34m 54s.xml">
-      <configuration name="ValidatorTests.validationUsingSelector" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ValidatorTests_validationUsingSelector - 2019.01.07 at 01h 37m 21s.xml">
       <configuration name="ValidatorTests.validationUsingSelector" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ValidatorTests_validationUsingSelector - 2019.01.07 at 01h 40m 04s.xml">
       <configuration name="ValidatorTests.validationUsingSelector" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidatorTests_basicSuccessValidation - 2019.01.07 at 02h 28m 52s.xml">
+      <configuration name="ValidatorTests.basicSuccessValidation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidatorTests_basicSuccessValidation - 2019.01.07 at 02h 29m 09s.xml">
+      <configuration name="ValidatorTests.basicSuccessValidation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidatorTests_basicSuccessValidation - 2019.01.07 at 02h 29m 16s.xml">
+      <configuration name="ValidatorTests.basicSuccessValidation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidatorTests_basicSuccessValidation - 2019.01.07 at 02h 29m 53s.xml">
+      <configuration name="ValidatorTests.basicSuccessValidation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidatorTests_basicSuccessValidation - 2019.01.07 at 02h 30m 11s.xml">
+      <configuration name="ValidatorTests.basicSuccessValidation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidatorTests_basicSuccessValidation - 2019.01.07 at 02h 30m 49s.xml">
+      <configuration name="ValidatorTests.basicSuccessValidation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidatorTests_basicSuccessValidation - 2019.01.07 at 02h 31m 12s.xml">
+      <configuration name="ValidatorTests.basicSuccessValidation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidatorTests - 2019.01.07 at 02h 34m 38s.xml">
+      <configuration name="ValidatorTests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -953,9 +886,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1552" height="880" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29825738" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3295302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -965,13 +899,13 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3230563" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32262382" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3172691" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32931727" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32931727" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.4953146" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.4953146" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32931727" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32797858" />
@@ -986,7 +920,7 @@
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24798928" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3295302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -995,17 +929,17 @@
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32931727" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39892906" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32262382" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3172691" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32931727" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32931727" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.33601072" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.4953146" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32931727" />
-      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32931727" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32797858" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1030,7 +964,8 @@
     <MESSAGE value="Implements String extensions" />
     <MESSAGE value="Some refactoring and documentation on Validator" />
     <MESSAGE value="Implemented ISelector and Selector annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented ISelector and Selector annotation" />
+    <MESSAGE value="Selector annotation fix and add all rules into rulesBuilders field of Validator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Selector annotation fix and add all rules into rulesBuilders field of Validator" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -1101,55 +1036,55 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>annotations.any { it is Selector }</expression-string>
+        <expression-string>model::class.declaredMemberProperties</expression-string>
         <language-id>kotlin</language-id>
+        <custom-info>import kotlin.reflect.full.primaryConstructor,import kotlin.reflect.full.memberProperties,import kotlin.reflect.full.declaredMemberProperties,import kotlin.reflect.full.declaredMemberExtensionProperties</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>annotations.contains(Selector::selector)</expression-string>
+        <expression-string>model::class.members</expression-string>
         <language-id>kotlin</language-id>
+        <custom-info>import kotlin.reflect.full.primaryConstructor,import kotlin.reflect.full.memberProperties,import kotlin.reflect.full.declaredMemberProperties,import kotlin.reflect.full.declaredMemberExtensionProperties</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>selector.expose(value)</expression-string>
+        <expression-string>model::class.declaredMemberExtensionProperties</expression-string>
         <language-id>kotlin</language-id>
+        <custom-info>import kotlin.reflect.full.primaryConstructor,import kotlin.reflect.full.memberProperties,import kotlin.reflect.full.declaredMemberProperties,import kotlin.reflect.full.declaredMemberExtensionProperties</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>&quot;SASD&quot;.any { it.isLowerCase() }</expression-string>
+        <expression-string>model::class.declaredMemberProperties</expression-string>
         <language-id>kotlin</language-id>
-        <custom-info>import kotlin.reflect.full.companionObjectInstance</custom-info>
+        <custom-info>import kotlin.reflect.full.primaryConstructor,import kotlin.reflect.full.memberProperties,import kotlin.reflect.full.declaredMemberProperties</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>value.any { it.isLowerCase() }</expression-string>
+        <expression-string>model::class.memberProperties</expression-string>
         <language-id>kotlin</language-id>
-        <custom-info>import kotlin.reflect.full.companionObjectInstance</custom-info>
+        <custom-info>import kotlin.reflect.full.primaryConstructor,import kotlin.reflect.full.memberProperties</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>value.all { it.isLowerCase() }</expression-string>
+        <expression-string>model::class.primaryConstructor.parameters[0]</expression-string>
         <language-id>kotlin</language-id>
-        <custom-info>import kotlin.reflect.full.companionObjectInstance</custom-info>
+        <custom-info>import kotlin.reflect.full.primaryConstructor</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>validator.constraintViolations.violations</expression-string>
+        <expression-string>model::class.primaryConstructor.parameters</expression-string>
         <language-id>kotlin</language-id>
+        <custom-info>import kotlin.reflect.full.primaryConstructor</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>validator.constraintViolations[&quot;email&quot;].propertyValue</expression-string>
+        <expression-string>model::class.primaryConstructor</expression-string>
         <language-id>kotlin</language-id>
+        <custom-info>import kotlin.reflect.full.primaryConstructor</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>ruleClazz.companionObjectInstance!!::class.declaredFunctions.find { it.name == ruleBuilderName }!!.call(annotation)</expression-string>
-        <language-id>kotlin</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>ruleClazz.companionObjectInstance!!::class.declaredFunctions.find { it.name == ruleBuilderName }!!.call()</expression-string>
+        <expression-string>model::class.constructors</expression-string>
         <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -1203,21 +1138,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="82" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-374">
-            <caret line="17" selection-start-line="17" selection-end-line="17" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1403,20 +1323,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/ISelector.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/StringRulesTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1530">
@@ -1424,20 +1330,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/Validator.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="71" column="33" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
+        <state relative-caret-position="476">
           <caret line="28" column="71" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
           <folding>
             <element signature="e#26#133#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.71/ff62b6a76e3200cac3d7df0859d7665fe6d54955/kotlin-stdlib-common-1.2.71-sources.jar!/generated/_Collections.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="1498" column="34" selection-start-line="1498" selection-start-column="34" selection-end-line="1498" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.71/837bf519e19ab718239e01223104869a40eab8b6/kotlin-reflect-1.2.71-sources.jar!/kotlin/reflect/full/KClasses.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2108">
+          <caret line="147" column="24" selection-start-line="147" selection-start-column="24" selection-end-line="147" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/Validator.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="75" column="37" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-49">
+          <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/ISelector.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="44">
+            <caret line="176" column="9" lean-forward="true" selection-start-line="176" selection-start-column="9" selection-end-line="176" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

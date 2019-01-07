@@ -13,8 +13,12 @@ pip install foobar
 ## ⭐️ Features
 * built-in validation rules like blank, email, min lenght, no numbers, etc.
 * Multiple Validations and Checks
+* Validation callback
 * Create your own custom rules
 * Respect of your types
+
+## Why
+The reason behind this library are explained in the followed article
 
 
 ## 🐎 Quick Usage
@@ -57,6 +61,7 @@ if (validation.isValidModel) {
   - [String](#String-rules)
   - [Int](#Int-rules)
   - [Boolean](#Boolean-rules)
+* [Selector](#Selector)
 * [Callback validation](#Callback-validation)
 * [Define your own custom rule](#Custom-rule)
 * Additional info
@@ -109,6 +114,45 @@ Validator.validate(myModel, object : INotifier {
 })
 ```
 
+### Selector
+The library contain an interface called `ISelector<T, R>`, useful for apply Rules in nested structure.
+
+When use data binding in Android, i generally use the Observable type, this type exhibit an inner field containing the string, boolean, ecc..
+With Selector i can target the value and apply rules on that.
+```kotlin
+class ObservableUser(
+
+    @Selector(ObservableFieldSelector::class)
+    @NotBlank
+    val fullName: ObservableField<String>,
+    
+    @Selector(ObservableFieldSelector::class)
+    @Email
+    val email: ObservableField<String>,
+    
+    @Selector(ObservableBooleanSelector::class)
+    @AssertTrue
+    val isObservable: ObservableBoolean   
+)
+```
+
+Implementing the selectors class.
+The first param in `ISelector<T, R>` is the type of your property, the second param is the type where the rules are applied.
+```kotlin
+class ObservableFieldSelector : ISelector<ObservableField<String>, String> {
+        override fun extractValueToValidate(value: ObservableField<String>): String? {
+                return value.get()
+        }
+}
+
+class ObservableBooleanSelector : ISelector<ObservableBoolean, Boolean> {
+        override fun extractValueToValidate(value: ObservableBoolean): Boolean {
+                return value.get()
+        }
+}
+```
+With Selector you can target nested field 
+
 ### Custom rule
 Define your custom rule on your preferred type in 3 steps.
 
@@ -126,7 +170,7 @@ class StartsWithRule(
     }
 }
 ```
-You can construct a rule as you want, in this case we need a target for check if the value starts with the it.
+You can construct a rule as you want, in this case we need a target for check if the value starts with it.
 Pass what you need for construct the rule through the annotation. [Type supported](https://kotlinlang.org/docs/reference/annotations.html#constructors)
 
 2. #### Provide a Builder for the rule, usually situated into the Rule class.

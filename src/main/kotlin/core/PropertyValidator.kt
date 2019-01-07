@@ -18,7 +18,7 @@ class PropertyValidator <T : Any> (
         if (selector != null) {
             val selectorImplementation = selector.selector.createInstance() as ISelector<Any, Any>
 
-            valueToValidate = selectorImplementation.expose(value) as T
+            valueToValidate = selectorImplementation.extractValueToValidate(value) as T
         }
 
         annotations.forEach { annotation: Annotation ->
