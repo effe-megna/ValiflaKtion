@@ -1,6 +1,10 @@
 package org.example
 
 import core.Validator
+import org.example.core.ISelector
+import org.example.core.Selector
+import org.example.rules.AllLowerCaseRule
+import org.example.rules.AllUpperCaseRule
 import org.example.rules.NotBlankRule.NotBlank
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
@@ -36,5 +40,27 @@ class ValidatorTests {
 
         assertFalse(validator.isValidModel)
         assertFalse(validator.constraintViolations.violations.isEmpty())
+    }
+
+    class Field(val value: String)
+
+    class Model(
+            @Selector(FieldSelector::class)
+            @AllUpperCaseRule.AllUpperCase
+            val field: Field
+    )
+
+    class FieldSelector : ISelector<Field, String> {
+        override fun expose(value: Field): String {
+            return value.value
+        }
+    }
+
+    @Test fun validationUsingSelector() {
+        val validator = Validator.validate(Model(Field("ALL")))
+
+        validator.executeValidation()
+
+        assertTrue(validator.isValidModel)
     }
 }

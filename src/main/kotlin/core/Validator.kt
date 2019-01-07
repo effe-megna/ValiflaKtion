@@ -2,10 +2,11 @@ package core
 
 import org.example.core.IRuleBuilder
 import org.example.core.PropertyValidator
-import org.example.rules.AtLeastOneLowerCaseRule
-import org.example.rules.AtLeastOneNumberCaseRule
-import org.example.rules.EmailRule
-import org.example.rules.NotBlankRule
+import org.example.rules.*
+import rules.AssertFalseRule
+import rules.AssertTrueRule
+import rules.NoNumbersRule
+import rules.StartsWithRule
 import kotlin.reflect.full.*
 
 /**
@@ -26,10 +27,24 @@ class Validator <T : Any>(
     val constraintViolations = RulesViolations()
 
     val ruleBuilders: MutableList<IRuleBuilder<out Any>> = mutableListOf(
-            NotBlankRule,
-            EmailRule,
+            AllLowerCaseRule,
+            AllUpperCaseRule,
+            AssertFalseRule,
+            AssertTrueRule,
+            AtLeastContainOneElementRule,
+            AtLeastOneLowerCaseRule,
             AtLeastOneNumberCaseRule,
-            AtLeastOneLowerCaseRule
+            AtLeastOneSpecialCharacterRule,
+            AtLeastOneUpperCaseRule,
+            ElementsNotEmptyRule,
+            EmailRule,
+            IntBetweenRule,
+            IntLessThenRule,
+            MinLenghtRule,
+            NoNumbersRule,
+            NotBlankRule,
+            RegexRule,
+            StartsWithRule
     )
 
     var isValidModel: Boolean = false
