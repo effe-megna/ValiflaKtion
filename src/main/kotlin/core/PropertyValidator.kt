@@ -5,7 +5,7 @@ import core.RulesViolations.RuleViolated
 import kotlin.reflect.full.createInstance
 
 class PropertyValidator <T : Any> (
-        private val value: T,
+        private val value: T?,
         private val builders: List<IRuleBuilder<in T>>
 ) {
     fun executeValidations(annotations: List<Annotation>): MutableList<RuleViolated> {
@@ -18,7 +18,7 @@ class PropertyValidator <T : Any> (
         if (selector != null) {
             val selectorImplementation = selector.selector.createInstance() as ISelector<Any, Any>
 
-            valueToValidate = selectorImplementation.extractValueToValidate(value) as T
+            valueToValidate = selectorImplementation.extractValueToValidate(value) as T?
         }
 
         annotations.forEach { annotation: Annotation ->

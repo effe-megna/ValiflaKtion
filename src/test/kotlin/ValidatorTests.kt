@@ -1,18 +1,15 @@
 package org.example
 
-import core.INotifier
-import core.RulesViolations
 import core.Validator
 import org.example.core.ISelector
 import org.example.core.Selector
-import org.example.rules.AllLowerCaseRule
-import org.example.rules.AllUpperCaseRule
-import org.example.rules.AllUpperCaseRule.AllUpperCase
-import org.example.rules.EmailRule
-import org.example.rules.NotBlankRule.NotBlank
+import rules.AllUpperCaseRule.AllUpperCase
+import rules.EmailRule
+import rules.NotBlankRule.NotBlank
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
+import rules.AssertTrueRule
 
 class ValidatorTests {
 
@@ -32,20 +29,22 @@ class ValidatorTests {
     }
 
     @Test fun basicSuccessValidation() {
-        val validator = Validator.validate(FooModel())
+        var isValidModel: Boolean? = null
+        val validator = Validator(FooModel()).apply { isValidModel = executeValidation() }
 
-        assertTrue(validator.isValidModel)
+        assertTrue(isValidModel!!)
         assertTrue(validator.constraintViolations.violations.isEmpty())
     }
 
     @Test fun basicFailedValidation() {
+        var isValidModel: Boolean? = null
         val validator = Validator(FooModel(
                 firstName = "",
                 lastName = "",
                 email = "fransisco"
-        )).apply { executeValidation() }
+        )).apply { isValidModel = executeValidation() }
 
-        assertFalse(validator.isValidModel)
+        assertFalse(isValidModel!!)
         assertFalse(validator.constraintViolations.violations.isEmpty())
     }
 
@@ -58,16 +57,47 @@ class ValidatorTests {
     )
 
     class FieldSelector : ISelector<Field, String> {
-        override fun extractValueToValidate(value: Field): String {
-            return value.value
+        override fun extractValueToValidate(value: Field?): String? {
+            return value?.value
         }
     }
 
     @Test fun validationUsingSelector() {
-        val validator = Validator.validate(Model(Field("ALL")))
+        var isValidModel: Boolean? = null
+        val validator = Validator(Model(Field("ALL"))).apply { isValidModel = executeValidation() }
 
-        validator.executeValidation()
-
-        assertTrue(validator.isValidModel)
+        assertTrue(isValidModel!!)
     }
+
+    data class FatModel(
+            @Selector(FieldSelector::class)
+            @NotBlank
+            val firstName: Field = Field(""),
+
+            @Selector(FieldSelector::class)
+            @NotBlank
+            val lastName: Field = Field(""),
+
+            @Selector(FieldSelector::class)
+            @NotBlank
+            @EmailRule.Email
+            val email: Field = Field(""),
+
+            @Selector(FieldSelector::class)
+            @NotBlank
+            @EmailRule.Email
+            val confirmEmail: Field = Field(""),
+
+            @AssertTrueRule.AssertTrue
+            val privacyAccepted: Boolean = false
+    )
+
+    @Test
+    fun testFatModel() {
+        var isValidModel = false
+        val validator = Validator(FatModel()).apply { isValidModel = executeValidation() }
+
+        assertFalse(isValidModel)
+    }
+
 }

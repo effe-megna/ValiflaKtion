@@ -9,7 +9,7 @@ class RulesViolations {
         return violations.singleOrNull { it.propertyName == propertyName }
     }
 
-    operator fun set(propertyName: String, propertyValue: Any, rulesViolated: List<RuleViolated>) {
+    operator fun set(propertyName: String, propertyValue: Any?, rulesViolated: List<RuleViolated>) {
         if (violations.any { it.propertyName == propertyName }.not()) {
             violations.add(ConstraintViolation(propertyName, propertyValue, mutableListOf()))
         }
@@ -23,7 +23,7 @@ class RulesViolations {
 
     class ConstraintViolation <T> (
             val propertyName: String,
-            val propertyValue: T,
+            val propertyValue: T?,
             val rulesViolated: MutableList<RuleViolated>
     )
 

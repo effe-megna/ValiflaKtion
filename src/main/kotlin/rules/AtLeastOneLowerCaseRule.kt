@@ -1,11 +1,10 @@
-package org.example.rules
+package rules
 
 import core.ErrorMessage
 import extensions.containAtLeastOneLowerCase
 import org.example.core.IRule
 import org.example.core.IRuleBuilder
 import org.example.utils.getKType
-import org.example.utils.toMatchRegex
 
 class AtLeastOneLowerCaseRule(override val message: String) : IRule<String>, ErrorMessage {
     @Target(AnnotationTarget.PROPERTY)

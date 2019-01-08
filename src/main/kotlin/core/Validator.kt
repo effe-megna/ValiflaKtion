@@ -2,11 +2,7 @@ package core
 
 import org.example.core.IRuleBuilder
 import org.example.core.PropertyValidator
-import org.example.rules.*
-import rules.AssertFalseRule
-import rules.AssertTrueRule
-import rules.NoNumbersRule
-import rules.StartsWithRule
+import rules.*
 import kotlin.reflect.full.*
 
 /**
@@ -17,7 +13,6 @@ import kotlin.reflect.full.*
  * @property notifier a class or object implements INotifier, useful for callback through the validation process
  * @property constraintViolations object that exhibits info about the failed rules
  * @property ruleBuilders mutableList of RuleBuilder, required for build rule from annotation
- * @property isValidModel boolean represents the result of validation
  *
  */
 class Validator <T : Any>(
@@ -47,19 +42,15 @@ class Validator <T : Any>(
             StartsWithRule
     )
 
-    var isValidModel: Boolean = false
-        get() = constraintViolations.violations.isEmpty()
-        private set
-
-    fun executeValidation() {
-        model::class.memberProperties.forEachIndexed { index, kProperty ->
+    fun executeValidation():Boolean {
+        model::class.declaredMemberProperties.forEachIndexed { index, kProperty ->
 
             val name = kProperty.name
             val annotations = kProperty.annotations
 
-            if (annotations.isEmpty()) return
+            if (annotations.isEmpty()) return@forEachIndexed
 
-            val value = readProperty<Any>(model, name)
+            val value = readProperty<Any?>(model, name)
 
             // Get builders based on property type, broken when use Selector
             // @Suppress("UNCHECKED_CAST")
@@ -82,21 +73,14 @@ class Validator <T : Any>(
                     validationFail(name, value, validationsViolated)
                 }
 
-                if (notifier.stopValidation()) return
+                if (notifier.stopValidation()) return false
             }
         }
+
+        return constraintViolations.violations.isEmpty()
     }
 
     companion object {
-        fun <T : Any> validate(
-                model: T,
-                notifier: INotifier? = null
-        ): Validator<T> {
-            return Validator(model, notifier).apply {
-                executeValidation()
-            }
-        }
-
         fun <R: Any?> readProperty(
                 instance: Any,
                 propertyName: String

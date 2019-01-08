@@ -3,11 +3,10 @@ package org.example
 import core.Validator
 import org.example.core.IRule
 import org.example.core.IRuleBuilder
-import org.example.rules.*
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import rules.NoNumbersRule
+import rules.*
 import kotlin.reflect.full.memberProperties
 
 class StringRulesTest {

@@ -1,4 +1,4 @@
-package org.example.rules
+package rules
 
 import core.ErrorMessage
 import extensions.isEmail
