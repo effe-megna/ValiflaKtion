@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4054867-e241-4a92-9b62-27a859d40e00" name="Default Changelist" comment="Selector annotation fix and add all rules into rulesBuilders field of Validator">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/core/ISelector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/core/ISelector.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/core/Validator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/core/Validator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -27,10 +27,10 @@
     <session id="-715337352">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="2" />
-          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="2" />
@@ -38,22 +38,22 @@
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="5" />
-          <entry key="kt" value="220" />
+          <entry key="kt" value="224" />
           <entry key="kts" value="8" />
-          <entry key="md" value="8" />
+          <entry key="md" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="5" />
-          <entry key="Kotlin" value="228" />
-          <entry key="Markdown" value="5" />
+          <entry key="Kotlin" value="232" />
+          <entry key="Markdown" value="6" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
@@ -85,8 +85,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="44">
-                <caret line="176" column="9" lean-forward="true" selection-start-line="176" selection-start-column="9" selection-end-line="176" selection-end-column="9" />
+              <first_editor relative-caret-position="392">
+                <caret line="227" column="4" lean-forward="true" selection-start-line="227" selection-start-column="4" selection-end-line="227" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -353,7 +353,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6186181483808" />
+        <entry key="$PROJECT_DIR$" value="6186854252615" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle.kts" value="3137182723" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="261915471" />
@@ -554,10 +554,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1098" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
+    <option name="height" value="1099" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -567,6 +567,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -592,6 +594,23 @@
               <item name="build" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-model-validation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-model-validation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="effe-megna" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-model-validation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-model-validation" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="effe-megna" type="462c0819:PsiDirectoryNode" />
+              <item name="my-model-validation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-model-validation" type="b2602c69:ProjectViewProjectNode" />
@@ -644,13 +663,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546826219753" />
+    <property name="SearchEverywhereHistoryKey" value="READ&#9;FILE&#9;file://C:/Users/Francesco/Documents/Kotlin/my-model-validation/README.md" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547164223269" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.09727626" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -664,7 +686,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ValidatorTests">
+  <component name="RunManager" selected="JUnit.ValidatorTests.testFatModel">
     <configuration name="ValidatorTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="my-model-validation_test" />
       <extension name="coverage">
@@ -675,22 +697,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="org.example.ValidatorTests" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ValidatorTests.basicFailedValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="my-model-validation_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="org.example.ValidatorTests" />
-      <option name="METHOD_NAME" value="basicFailedValidation" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -727,6 +733,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ValidatorTests.testFatModel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-model-validation_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ValidatorTests" />
+      <option name="METHOD_NAME" value="testFatModel" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ValidatorTests.validationUsingSelector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="my-model-validation_test" />
       <extension name="coverage">
@@ -746,17 +768,17 @@
     <list>
       <item itemvalue="JUnit.ValidatorTests" />
       <item itemvalue="JUnit.ValidatorTests.fancyRule" />
-      <item itemvalue="JUnit.ValidatorTests.basicFailedValidation" />
       <item itemvalue="JUnit.ValidatorTests.basicSuccessValidation" />
       <item itemvalue="JUnit.ValidatorTests.validationUsingSelector" />
+      <item itemvalue="JUnit.ValidatorTests.testFatModel" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ValidatorTests.testFatModel" />
         <item itemvalue="JUnit.ValidatorTests" />
         <item itemvalue="JUnit.ValidatorTests.basicSuccessValidation" />
         <item itemvalue="JUnit.ValidatorTests.validationUsingSelector" />
         <item itemvalue="JUnit.ValidatorTests.fancyRule" />
-        <item itemvalue="JUnit.ValidatorTests.basicFailedValidation" />
       </list>
     </recent_temporary>
   </component>
@@ -845,18 +867,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ValidatorTests_validationUsingSelector - 2019.01.07 at 01h 37m 21s.xml">
-      <configuration name="ValidatorTests.validationUsingSelector" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ValidatorTests_validationUsingSelector - 2019.01.07 at 01h 40m 04s.xml">
-      <configuration name="ValidatorTests.validationUsingSelector" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ValidatorTests_basicSuccessValidation - 2019.01.07 at 02h 28m 52s.xml">
-      <configuration name="ValidatorTests.basicSuccessValidation" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ValidatorTests_basicSuccessValidation - 2019.01.07 at 02h 29m 09s.xml">
-      <configuration name="ValidatorTests.basicSuccessValidation" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ValidatorTests_basicSuccessValidation - 2019.01.07 at 02h 29m 16s.xml">
       <configuration name="ValidatorTests.basicSuccessValidation" configurationId="JUnit" />
     </history-entry>
@@ -875,6 +885,18 @@
     <history-entry file="ValidatorTests - 2019.01.07 at 02h 34m 38s.xml">
       <configuration name="ValidatorTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ValidatorTests_testFatModel - 2019.01.11 at 00h 46m 10s.xml">
+      <configuration name="ValidatorTests.testFatModel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidatorTests_testFatModel - 2019.01.11 at 00h 47m 54s.xml">
+      <configuration name="ValidatorTests.testFatModel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidatorTests_testFatModel - 2019.01.11 at 00h 49m 47s.xml">
+      <configuration name="ValidatorTests.testFatModel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidatorTests_testFatModel - 2019.01.11 at 00h 52m 02s.xml">
+      <configuration name="ValidatorTests.testFatModel" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -889,7 +911,7 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3295302" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.23221476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -900,7 +922,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32262382" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3172691" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43355703" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32931727" />
@@ -908,7 +930,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.4953146" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32931727" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32797858" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32751676" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -968,6 +990,24 @@
     <option name="LAST_COMMIT_MESSAGE" value="Selector annotation fix and add all rules into rulesBuilders field of Validator" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt</url>
+          <line>97</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt</url>
+          <line>99</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="validator.constraintViolations" language="kotlin" />
@@ -1330,16 +1370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="71" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
-          <folding>
-            <element signature="e#26#133#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.71/ff62b6a76e3200cac3d7df0859d7665fe6d54955/kotlin-stdlib-common-1.2.71-sources.jar!/generated/_Collections.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1354,32 +1384,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/ISelector.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="71" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/Validator.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="75" column="37" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
+        <state relative-caret-position="68">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/ISelector.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="30" />
+        <state relative-caret-position="510">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+          <folding>
+            <element signature="e#21#331#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="44">
-            <caret line="176" column="9" lean-forward="true" selection-start-line="176" selection-start-column="9" selection-end-line="176" selection-end-column="9" />
+          <first_editor relative-caret-position="392">
+            <caret line="227" column="4" lean-forward="true" selection-start-line="227" selection-start-column="4" selection-end-line="227" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>
@@ -1393,6 +1433,65 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.09727626" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Kotlin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.09727626" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.09727626" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.09727626" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>my-model-validation</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.09727626" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
@@ -1400,6 +1499,18 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: junit:junit:4.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.09727626" />
               </list>
             </option>
           </splitter-proportions>
