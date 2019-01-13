@@ -8,7 +8,7 @@ class PropertyValidator <T : Any> (
         private val value: T?,
         private val builders: List<IRuleBuilder<in T>>
 ) {
-    fun executeValidations(annotations: List<Annotation>): MutableList<RuleViolated> {
+    fun validate(annotations: List<Annotation>): MutableList<RuleViolated> {
         val violations = mutableListOf<RuleViolated>()
 
         val selector = annotations.singleOrNull { it is Selector } as Selector?

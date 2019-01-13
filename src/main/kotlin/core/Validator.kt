@@ -61,7 +61,7 @@ class Validator <T : Any>(
             val validationsViolated = PropertyValidator(
                     value,
                     ruleBuilders as List<IRuleBuilder<in Any>>
-            ).executeValidations(model::class.memberProperties.elementAt(index).annotations)
+            ).validate(model::class.memberProperties.elementAt(index).annotations)
 
             if (validationsViolated.isNotEmpty())
                 constraintViolations[name, value] = validationsViolated

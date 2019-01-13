@@ -176,9 +176,8 @@ Pass what you need for construct the rule through the annotation. [Type supporte
 2. #### Provide a Builder for the rule, usually situated into the Rule class.
 ```kotlin
  companion object Builder : IRuleBuilder<String> {
-      override val kType = getKType<String>() // return the type of rule using built-in fun getKType()
-
-      override fun buildFromAnnotation(annotation: Annotation): IRule<String>? {
+ 
+    override fun buildFromAnnotation(annotation: Annotation): IRule<String>? {
         return if (annotation is StartsWith) {
           StartsWithRule(annotation.target)
         } else null

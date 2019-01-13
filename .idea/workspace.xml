@@ -1,32 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4054867-e241-4a92-9b62-27a859d40e00" name="Default Changelist" comment="README License MIT">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/my-model-validation_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/my-model-validation_test.iml" afterDir="false" />
+    <list default="true" id="e4054867-e241-4a92-9b62-27a859d40e00" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/core/IRuleBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/core/IRuleBuilder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/extensions/String.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/extensions/String.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rules/AllLowerCaseRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rules/AllLowerCaseRule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rules/AllUpperCaseRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rules/AllUpperCaseRule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rules/AssertFalseRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rules/AssertFalseRule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rules/AssertTrueRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rules/AssertTrueRule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rules/AtLeastContainOneElementRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rules/AtLeastContainOneElementRule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rules/AtLeastOneLowerCaseRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rules/AtLeastOneLowerCaseRule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rules/AtLeastOneNumberCaseRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rules/AtLeastOneNumberCaseRule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rules/AtLeastOneSpecialCharacterRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rules/AtLeastOneSpecialCharacterRule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rules/AtLeastOneUpperCaseRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rules/AtLeastOneUpperCaseRule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rules/ElementsNotEmptyRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rules/ElementsNotEmptyRule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rules/EmailRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rules/EmailRule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rules/IntBetweenRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rules/IntBetweenRule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rules/IntLessThenRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rules/IntLessThenRule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rules/MinLenghtRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rules/MinLenghtRule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rules/NoNumbersRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rules/NoNumbersRule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rules/NotBlankRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rules/NotBlankRule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rules/RegexRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rules/RegexRule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/rules/StartsWithRule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/rules/StartsWithRule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/KType.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/Regex.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Regex.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/StringRulesTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/StringRulesTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/core/Validator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/core/Validator.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -64,32 +43,32 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="5" />
-          <entry key="kt" value="276" />
+          <entry key="kt" value="280" />
           <entry key="kts" value="8" />
-          <entry key="md" value="9" />
+          <entry key="md" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="5" />
-          <entry key="Kotlin" value="284" />
-          <entry key="Markdown" value="6" />
+          <entry key="Kotlin" value="288" />
+          <entry key="Markdown" value="7" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="kt" value="14566" />
+          <entry key="kt" value="14574" />
           <entry key="kts" value="87" />
-          <entry key="md" value="1437" />
-          <entry key="txt" value="736" />
+          <entry key="md" value="1442" />
+          <entry key="txt" value="812" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Kotlin" value="14666" />
-          <entry key="Markdown" value="1422" />
-          <entry key="PLAIN_TEXT" value="738" />
+          <entry key="Kotlin" value="14678" />
+          <entry key="Markdown" value="1423" />
+          <entry key="PLAIN_TEXT" value="814" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -100,35 +79,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/kotlin/StringRulesTest.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="121" column="64" selection-start-line="121" selection-start-column="64" selection-end-line="121" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/rules/AllLowerCaseRule.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/IRuleBuilder.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -563,9 +514,7 @@
         <option value="$PROJECT_DIR$/build.gradle.kts" />
         <option value="$PROJECT_DIR$/src/main/kotlin/core/PropertyValidator.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/core/ISelector.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/core/Validator.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/kotlin/core/IRuleBuilder.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/AllLowerCaseRule.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/AllUpperCaseRule.kt" />
@@ -587,6 +536,8 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/rules/StartsWithRule.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/utils/Regex.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/StringRulesTest.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/core/Validator.kt" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -685,7 +636,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="AtLeasSpe&#9;FILE&#9;file://C:/Users/Francesco/Documents/Kotlin/my-model-validation/src/main/kotlin/rules/AtLeastOneSpecialCharacterRule.kt&#10;AtLea&#9;FILE&#9;file://C:/Users/Francesco/Documents/Kotlin/my-model-validation/src/main/kotlin/rules/AtLeastOneLowerCaseRule.kt&#10;READ&#9;FILE&#9;file://C:/Users/Francesco/Documents/Kotlin/my-model-validation/README.md" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547400426027" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547400866717" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -704,7 +655,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StringRulesTest">
+  <component name="RunManager" selected="JUnit.ValidatorTests.testFatModel">
     <configuration name="StringRulesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="my-model-validation_test" />
       <extension name="coverage">
@@ -790,10 +741,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ValidatorTests.testFatModel" />
         <item itemvalue="JUnit.StringRulesTest" />
         <item itemvalue="JUnit.StringRulesTest.allLowerCase" />
         <item itemvalue="JUnit.ValidatorTests" />
-        <item itemvalue="JUnit.ValidatorTests.testFatModel" />
         <item itemvalue="JUnit.ValidatorTests.basicSuccessValidation" />
       </list>
     </recent_temporary>
@@ -886,19 +837,17 @@
       <option name="project" value="LOCAL" />
       <updated>1547172509235</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Removed kType from Builder interface and update StringRulesTest">
+      <created>1547400507712</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1547400507712</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ValidatorTests - 2019.01.07 at 02h 34m 38s.xml">
-      <configuration name="ValidatorTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ValidatorTests_testFatModel - 2019.01.11 at 00h 46m 10s.xml">
-      <configuration name="ValidatorTests.testFatModel" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ValidatorTests_testFatModel - 2019.01.11 at 00h 47m 54s.xml">
-      <configuration name="ValidatorTests.testFatModel" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ValidatorTests_testFatModel - 2019.01.11 at 00h 49m 47s.xml">
       <configuration name="ValidatorTests.testFatModel" configurationId="JUnit" />
     </history-entry>
@@ -920,6 +869,15 @@
     <history-entry file="StringRulesTest_allLowerCase - 2019.01.13 at 18h 25m 44s.xml">
       <configuration name="StringRulesTest.allLowerCase" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StringRulesTest_allLowerCase - 2019.01.13 at 18h 26m 59s.xml">
+      <configuration name="StringRulesTest.allLowerCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringRulesTest - 2019.01.13 at 18h 27m 09s.xml">
+      <configuration name="StringRulesTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ValidatorTests_testFatModel - 2019.01.13 at 18h 30m 43s.xml">
+      <configuration name="ValidatorTests.testFatModel" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -932,7 +890,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23557048" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -944,8 +901,8 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32214764" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.43355703" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32080537" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.29127517" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
@@ -1011,25 +968,10 @@
     <MESSAGE value="Implemented ISelector and Selector annotation" />
     <MESSAGE value="Selector annotation fix and add all rules into rulesBuilders field of Validator" />
     <MESSAGE value="README License MIT" />
-    <option name="LAST_COMMIT_MESSAGE" value="README License MIT" />
+    <MESSAGE value="Removed kType from Builder interface and update StringRulesTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed kType from Builder interface and update StringRulesTest" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/test/kotlin/StringRulesTest.kt</url>
-          <line>21</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/rules/AllLowerCaseRule.kt</url>
-          <line>17</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="validator.constraintViolations" language="kotlin" />
@@ -1248,28 +1190,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/Validator.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2585">
-            <caret line="227" column="4" lean-forward="true" selection-start-line="227" selection-start-column="4" selection-end-line="227" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/extensions/String.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1472,16 +1392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-          <folding>
-            <element signature="e#21#331#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/IRuleBuilder.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1498,8 +1408,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/StringRulesTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="121" column="64" selection-start-line="121" selection-start-column="64" selection-end-line="121" selection-end-column="64" />
+        <state relative-caret-position="-1514">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2958">
+            <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/core/Validator.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-41">
+          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/kotlin/ValidatorTests.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
