@@ -2,7 +2,6 @@ package rules
 
 import org.example.core.IRule
 import org.example.core.IRuleBuilder
-import org.example.utils.getKType
 
 class StartsWithRule(
         val target: String
@@ -16,8 +15,6 @@ class StartsWithRule(
     }
 
     companion object Builder : IRuleBuilder<String> {
-        override val kType = getKType<String>()
-
         override fun buildFromAnnotation(annotation: Annotation): IRule<String>? {
             return if (annotation is StartsWith) {
                 StartsWithRule(annotation.target)

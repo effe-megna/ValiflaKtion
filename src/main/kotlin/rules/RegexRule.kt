@@ -3,8 +3,7 @@ package rules
 import core.ErrorMessage
 import org.example.core.IRule
 import org.example.core.IRuleBuilder
-import org.example.utils.getKType
-import org.example.utils.toMatchRegex
+import utils.toMatchRegex
 
 class RegexRule(val pattern: String, override val message: String) : IRule<String>, ErrorMessage {
     @Target(AnnotationTarget.PROPERTY)
@@ -15,8 +14,6 @@ class RegexRule(val pattern: String, override val message: String) : IRule<Strin
     }
 
     companion object Builder : IRuleBuilder<String> {
-        override val kType = getKType<String>()
-
         override fun buildFromAnnotation(annotation: Annotation): IRule<String>? {
             return if (annotation is Regex) {
                 RegexRule(annotation.pattern, annotation.message)

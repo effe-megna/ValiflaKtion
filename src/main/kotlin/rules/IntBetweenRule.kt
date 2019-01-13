@@ -3,7 +3,6 @@ package rules
 import core.ErrorMessage
 import org.example.core.IRule
 import org.example.core.IRuleBuilder
-import org.example.utils.getKType
 
 class IntBetweenRule(
         private val lower: Int,
@@ -22,8 +21,6 @@ class IntBetweenRule(
     }
 
     companion object Builder : IRuleBuilder<Int> {
-        override val kType = getKType<Int>()
-
         override fun buildFromAnnotation(annotation: Annotation): IRule<Int>? {
             return if (annotation is IntBetween) {
                 IntBetweenRule(annotation.lower, annotation.greater, annotation.message)

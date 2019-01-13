@@ -4,8 +4,6 @@ import core.ErrorMessage
 import extensions.containAnyNumber
 import org.example.core.IRule
 import org.example.core.IRuleBuilder
-import org.example.utils.getKType
-import org.example.utils.toMatchRegex
 
 class NoNumbersRule(override val message: String) : IRule<String>, ErrorMessage {
     @Target(AnnotationTarget.PROPERTY)
@@ -17,8 +15,6 @@ class NoNumbersRule(override val message: String) : IRule<String>, ErrorMessage 
     }
 
     companion object Builder : IRuleBuilder<String> {
-        override val kType = getKType<String>()
-
         override fun buildFromAnnotation(annotation: Annotation): IRule<String>? {
             return if (annotation is NoNumbers) {
                 NoNumbersRule(annotation.message)

@@ -1,6 +1,6 @@
 package extensions
 
-import org.example.utils.toMatchRegex
+import utils.toMatchRegex
 
 fun String.containOnlyLowerCase(): Boolean = this.all { it.isLowerCase() }
 

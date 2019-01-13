@@ -20,74 +20,74 @@ class StringRulesTest {
 
     @Test fun allLowerCase() {
         TestUtils<AllLowerCaseModel>(AllLowerCaseModel("lowercase"))
-                .constructoRuleFromBuilderAndProperty(AllLowerCaseRule.Builder)
-                .ruleIsValidOnProperty("value")
+                .constructRuleFromBuildernAndProperty(AllLowerCaseRule.Builder)
+                .ruleIsValidOnProperty()
                 .modify {
                     it.foo = "LOWERCASE"
                 }
-                .ruleIsUnvalidonProperty()
+                .ruleIsNotValidOnProperty()
     }
 
     @Test fun allUpperCase() {
         val fooModel = AllUpperCaseModel("UPPERCASE")
 
         TestUtils<AllUpperCaseModel>(fooModel)
-            .constructoRuleFromBuilderAndProperty(AllUpperCaseRule.Builder)
-            .ruleIsValidOnProperty("value")
+            .constructRuleFromBuildernAndProperty(AllUpperCaseRule.Builder)
+            .ruleIsValidOnProperty()
             .modify {
                 it.foo = "uppercase"
             }
-            .ruleIsUnvalidonProperty("value")
+            .ruleIsNotValidOnProperty()
     }
 
     @Test fun atLeastOneLowerCase() {
         TestUtils<AtLeastOneLowerCaseModel>(AtLeastOneLowerCaseModel("kCLASS"))
-                .constructoRuleFromBuilderAndProperty(AtLeastOneLowerCaseRule)
+                .constructRuleFromBuildernAndProperty(AtLeastOneLowerCaseRule)
                 .ruleIsValidOnProperty()
                 .modify {
                     it.foo = "KCLASS"
                 }
-                .ruleIsUnvalidonProperty()
+                .ruleIsNotValidOnProperty()
     }
 
     @Test fun atLeastOneNumberCase() {
         TestUtils<AtLeastOneNumberCaseModel>(AtLeastOneNumberCaseModel("asd1"))
-                .constructoRuleFromBuilderAndProperty(AtLeastOneNumberCaseRule)
+                .constructRuleFromBuildernAndProperty(AtLeastOneNumberCaseRule)
                 .ruleIsValidOnProperty()
                 .modify {
                     it.foo = "asd"
                 }
-                .ruleIsUnvalidonProperty()
+                .ruleIsNotValidOnProperty()
     }
 
     @Test fun atLeastOneSpecialCharacter() {
         TestUtils<AtLeastOneSpecialCharacterModel>(AtLeastOneSpecialCharacterModel("password#"))
-                .constructoRuleFromBuilderAndProperty(AtLeastOneSpecialCharacterRule)
+                .constructRuleFromBuildernAndProperty(AtLeastOneSpecialCharacterRule)
                 .ruleIsValidOnProperty()
                 .modify {
                     it.foo = "password"
                 }
-                .ruleIsUnvalidonProperty()
+                .ruleIsNotValidOnProperty()
     }
 
     @Test fun atLeastOneUpperCase() {
         TestUtils<AtLeastOneUpperCaseModel>(AtLeastOneUpperCaseModel("Pass"))
-                .constructoRuleFromBuilderAndProperty(AtLeastOneUpperCaseRule)
+                .constructRuleFromBuildernAndProperty(AtLeastOneUpperCaseRule)
                 .ruleIsValidOnProperty()
                 .modify {
                     it.foo = "fail"
                 }
-                .ruleIsUnvalidonProperty()
+                .ruleIsNotValidOnProperty()
     }
 
     @Test fun noNumbers() {
         TestUtils<NoNumberModel>(NoNumberModel("pass"))
-                .constructoRuleFromBuilderAndProperty(NoNumbersRule)
+                .constructRuleFromBuildernAndProperty(NoNumbersRule)
                 .ruleIsValidOnProperty()
                 .modify {
                     it.foo = "1_fail"
                 }
-                .ruleIsUnvalidonProperty()
+                .ruleIsNotValidOnProperty()
     }
 
 
@@ -95,9 +95,9 @@ class StringRulesTest {
 
         var rule: IRule<*>? = null
 
-        fun constructoRuleFromBuilderAndProperty(
+        fun constructRuleFromBuildernAndProperty(
                 ruleBuilder: IRuleBuilder<*>,
-                propertyName: String = "value"
+                propertyName: String = "foo"
         ): TestUtils<T> {
             val annotation = model::class.memberProperties.find { it.name == propertyName }!!.annotations.first()
 
@@ -113,13 +113,13 @@ class StringRulesTest {
             return this
         }
 
-        fun ruleIsValidOnProperty(propertyName: String = "value"): TestUtils<T> {
+        fun ruleIsValidOnProperty(propertyName: String = "foo"): TestUtils<T> {
             assertTrue(rule!!.isValid(Validator.readProperty(model, propertyName)))
 
             return this
         }
 
-        fun ruleIsUnvalidonProperty(propertyName: String = "value"): TestUtils<T> {
+        fun ruleIsNotValidOnProperty(propertyName: String = "foo"): TestUtils<T> {
             assertFalse(rule!!.isValid(Validator.readProperty(model, propertyName)))
 
             return this

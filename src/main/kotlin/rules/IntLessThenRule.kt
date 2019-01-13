@@ -3,7 +3,6 @@ package rules
 import core.ErrorMessage
 import org.example.core.IRule
 import org.example.core.IRuleBuilder
-import org.example.utils.getKType
 
 class IntLessThenRule(val target: Int, override val message: String) : IRule<Int>, ErrorMessage {
     @Target(AnnotationTarget.PROPERTY)
@@ -18,9 +17,7 @@ class IntLessThenRule(val target: Int, override val message: String) : IRule<Int
     }
 
     companion object Builder : IRuleBuilder<Int>{
-        override val kType = getKType<Int>()
-
-        override fun buildFromAnnotation(annotation: Annotation): IRule<Int>? {
+       override fun buildFromAnnotation(annotation: Annotation): IRule<Int>? {
             return if (annotation is IntLessThen) {
                 IntLessThenRule(annotation.target, annotation.message)
             } else null

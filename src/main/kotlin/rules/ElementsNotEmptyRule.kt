@@ -3,7 +3,6 @@ package rules
 import core.ErrorMessage
 import org.example.core.IRule
 import org.example.core.IRuleBuilder
-import org.example.utils.getKType
 
 class ElementsNotEmptyRule(override val message: String) : IRule<List<String>>, ErrorMessage {
     @Target(AnnotationTarget.PROPERTY)
@@ -14,8 +13,6 @@ class ElementsNotEmptyRule(override val message: String) : IRule<List<String>>, 
     }
 
     companion object Builder : IRuleBuilder<List<String>> {
-        override val kType = getKType<List<String>>()
-
         override fun buildFromAnnotation(annotation: Annotation): IRule<List<String>>? {
             return if (annotation is ElementsNotEmpty) {
                 ElementsNotEmptyRule(annotation.message)

@@ -3,8 +3,6 @@ package rules
 import core.ErrorMessage
 import org.example.core.IRule
 import org.example.core.IRuleBuilder
-import org.example.utils.getKType
-
 class AssertTrueRule(override val message: String) : IRule<Boolean>, ErrorMessage {
     @Target(AnnotationTarget.PROPERTY)
     annotation class AssertTrue(val message: String = "The boolean should be true.")
@@ -16,9 +14,7 @@ class AssertTrueRule(override val message: String) : IRule<Boolean>, ErrorMessag
     }
 
     companion object Builder : IRuleBuilder<Boolean> {
-        override val kType = getKType<Boolean>()
-
-        override fun buildFromAnnotation(annotation: Annotation): IRule<Boolean>? {
+       override fun buildFromAnnotation(annotation: Annotation): IRule<Boolean>? {
             return if (annotation is AssertTrue) {
                 AssertTrueRule(annotation.message)
             } else null
