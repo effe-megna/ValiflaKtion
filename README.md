@@ -1,6 +1,6 @@
 # ValiflaKtion
 
-:crystal_ball:  A model validation library, written in Kotlin, that use annotations and reflection.
+:crystal_ball:  A model **validation** library, written in Kotlin, that use annotations and **reflection**.
 
 ## Installation
 
