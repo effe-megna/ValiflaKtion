@@ -32,6 +32,6 @@ class RulesViolations {
             val annotation: Annotation,
             var message: String = "Message not provided"
     ) {
-        val ruleName = rule.javaClass.name
+        val ruleName = ruleClass.name
     }
 }

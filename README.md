@@ -1,6 +1,6 @@
-# My-Model-Validation
+# ValiflaKtion
 
-A model validation library, written in Kotlin, that use annotation processing.
+:crystal_ball:  A model validation library, written in Kotlin, that use annotations and reflection.
 
 ## Installation
 
