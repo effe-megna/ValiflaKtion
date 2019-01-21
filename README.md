@@ -4,11 +4,7 @@
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
-```bash
-pip install foobar
-```
+Work in progress
 
 ## ⭐️ Features
 * built-in validation rules like blank, email, min lenght, no numbers, etc.
